@@ -23,6 +23,7 @@
     "url": "https://github.com/trentrand/neato-botvac-adapter/issues"
   },
   "dependencies": {
+    "node-botvac": "^0.1.5",
     "node-persist": "^2.1.0",
     "node-ssdp": "^3.2.1"
   },
