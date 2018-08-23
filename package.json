@@ -44,6 +44,29 @@
     "plugin": true,
     "exec": "{nodeLoader} {path}",
     "schema": {
+      "type": "object",
+      "properties": {
+        "credentials": {
+          "type": "object",
+          "title": "Login to your Neato Account",
+          "description": "Create an account: https://www.neatorobotics.com/create-account/",
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email",
+              "title": "Email Address"
+            },
+            "password": {
+              "type": "string",
+              "title": "Password"
+            }
+          },
+          "required": [
+            "email",
+            "password"
+          ]
+        }
+      }
     }
   }
 }
