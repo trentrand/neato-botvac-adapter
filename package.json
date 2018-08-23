@@ -1,0 +1,49 @@
+{
+  "name": "neato-botvac-adapter",
+  "display_name": "Neato Botvac",
+  "version": "0.1.0",
+  "description": "Neato Botvac Connected support",
+  "main": "index.js",
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "neato",
+    "botvac",
+    "neato-botvac"
+  ],
+  "homepage": "https://github.com/trentrand/neato-botvac-adapter",
+  "author": "Trent Rand",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trentrand/neato-botvac-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trentrand/neato-botvac-adapter/issues"
+  },
+  "dependencies": {
+    "node-persist": "^2.1.0",
+    "node-ssdp": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.19.1"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "neato-botvac-adapter.js",
+    "index.js"
+  ],
+  "moziot": {
+    "api": {
+      "min": 1,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "schema": {
+    }
+  }
+}
