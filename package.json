@@ -60,6 +60,11 @@
             "password": {
               "type": "string",
               "title": "Password"
+            },
+            "disableSchedule": {
+              "type": "boolean",
+              "title": "Disable Schedule",
+              "description": "If enabled, all of your Botvac's schedules will be disabled, allowing you to schedule your devices using rules instead."
             }
           },
           "required": [
