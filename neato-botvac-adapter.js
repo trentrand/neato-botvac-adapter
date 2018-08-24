@@ -36,9 +36,14 @@ class NeatoAdapter extends Adapter {
       }
 
       for (const robot of robots) {
-        console.log(JSON.stringify(robot, null, '\t'));
+        this.addDevice(robot);
       }
     });
+  }
+
+  addDevice(device) {
+    const robotInstance = new BotvacConnected(this, device);
+    this.handleDeviceAdded(robotInstance);
   }
 }
 
