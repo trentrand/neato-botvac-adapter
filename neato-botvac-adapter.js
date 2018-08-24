@@ -47,9 +47,9 @@ class NeatoAdapter extends Adapter {
   }
 }
 
-function loadNeatoAdapter(addonManager, manifest, _errorCallback) {
+// Entry point for loading adapter
+function loadAdapter(addonManager, manifest, _errorCallback) {
   new NeatoAdapter(addonManager, manifest, _errorCallback);
 }
 
-
-module.exports = loadNeatoAdapter;
+module.exports = loadAdapter;
