@@ -35,6 +35,7 @@
     "LICENSE",
     "SHA256SUMS",
     "neato-botvac-adapter.js",
+    "neato-botvac-device.js",
     "index.js"
   ],
   "moziot": {
