@@ -1,7 +1,9 @@
 'use strict';
 
 const Neato = require('node-botvac');
-const {Adapter, Device, Property} = require('gateway-addon');
+
+const {Adapter} = require('gateway-addon');
+const BotvacConnected = require('./neato-botvac-device');
 
 class NeatoAdapter extends Adapter {
   constructor(addonManagerInstance, manifest, _errorCallback) {
@@ -27,7 +29,16 @@ class NeatoAdapter extends Adapter {
   }
 
   startPairing() {
+    this.neatoClient.getRobots((error, robots) => {
+      if (error) {
+        console.log(error);
+        return;
+      }
 
+      for (const robot of robots) {
+        console.log(JSON.stringify(robot, null, '\t'));
+      }
+    });
   }
 }
 
